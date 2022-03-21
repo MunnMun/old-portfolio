@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh kaushik-portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar sidebargo">
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/hobbies.html">My Hobbies</a></li>
+                    <li><a href="/skills.html">Skills</a></li>
+                    <li><a href="/contact.html">contact me</a></li>
+                    <li><a href="https://github.com/MunnMun">github</a></li>
+                    <li><a href="www.linkedin.com/in/harsh-kaushik-5a4614229">LinkedIn</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="hamburger">
+                <img class="ham" src="hamburger.png" alt="" width="23">
+                <img class="cross" src="cross.png" alt="" width="23">
+            </div>
+            <div class="hobbycontainer">
+                <h1>My Hobbies - </h1>
+                <div class="paragraph">
+                <p>I like to play football and watch anime.My recent hobbies are to code and play Valorant.</p>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        console.log("hello");
+        document.querySelector('.cross').style.display = 'none';
+        document.querySelector('.hamburger').addEventListener("click", () => {
+            document.querySelector('.sidebar').classList.toggle('sidebargo');
+            if (document.querySelector('.sidebar').classList.contains('sidebargo')){
+                document.querySelector('.ham').style.display = 'inline'
+                document.querySelector('.cross').style.display = 'none'
+            }
+            else {
+                document.querySelector('.ham').style.display = 'none'
+                document.querySelector('.cross').style.display = 'inline'
+            }
+        })
+    </script>
+</body>
+
+</html>
